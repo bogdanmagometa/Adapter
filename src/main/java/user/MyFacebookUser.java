@@ -2,6 +2,7 @@ package user;
 
 import facebook.FacebookUser;
 
+import java.time.LocalDate;
 import java.util.Date;
 
 public class MyFacebookUser implements User {
@@ -22,7 +23,7 @@ public class MyFacebookUser implements User {
     }
 
     @Override
-    public Date getLastActiveTime() {
+    public long getLastActiveTime() {
         return facebookUser.getUserActiveTime();
     }
 }

@@ -2,6 +2,7 @@ package user;
 
 import twitter.TwitterUser;
 
+import java.time.LocalDate;
 import java.util.Date;
 
 public class MyTwitterUser implements User {
@@ -22,7 +23,7 @@ public class MyTwitterUser implements User {
     }
 
     @Override
-    public Date getLastActiveTime() {
+    public long getLastActiveTime() {
         return twitterUser.getLastActiveTime();
     }
 }
